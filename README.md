@@ -2,7 +2,7 @@
 
 ## What is it?
 
-This resource was created so server developers, owners or leadership can detect modders easier. I do not recommend kicking or banning the user based off the information provided by this system. I only recommend keeping an eye out of users who are detected by this system when a modder is present.
+This resource was created so server developers, owners or leadership can detect modders easier. I do not recommend kicking or banning the user based off the information provided by this system. I only recommend keeping an eye out for users who are detected by this system when a modder is present.
 
 ## Configuration
 
