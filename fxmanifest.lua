@@ -1,4 +1,4 @@
--- For support join my discord: https://discord.gg/Z9Mxu72zZ6
+-- For support join my discord: https://discord.gg/zzUfkfRHzP
 author "Breezy#0001"
 description "Keybased-AC"
 version "1.0"
