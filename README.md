@@ -21,6 +21,7 @@ The following can be found in the ``config.lua`` file.
         -- In order to prevent rate limitation by Discord, I had to implement this counter,
         -- If the set keybinds are pressed for ex. 5x then it will proceed to send a webhook.
         Counter = 5, -- Lowering this value raises your chances of being rate limited. Edit at your own risk.
+        Screenshot = true, -- Requires [screenshot-basic]
         Webhook = '' -- Do not forget to add a webhook.
     },
     Debug = {
@@ -33,7 +34,9 @@ In the ``config.lua`` file you can add more keybinds to be logged & add the disc
 ## :white_check_mark: **Changelog**
 > **v1.1**
 > - Added a counter to help prevent discord rate limitation.
-> - Added screenshot-basic export.
+> **v1.2**
+> - Added [screenshot-basic](https://github.com/citizenfx/screenshot-basic) export.
+
 
 ## Download
 https://github.com/BreezyTheDev/Keybased-AC
