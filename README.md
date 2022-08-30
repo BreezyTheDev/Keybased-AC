@@ -33,6 +33,7 @@ In the ``config.lua`` file you can add more keybinds to be logged & add the disc
 ## :white_check_mark: **Changelog**
 > **v1.1**
 > - Added a counter to help prevent discord rate limitation.
+> - Added screenshot-basic export.
 
 ## Download
 https://github.com/BreezyTheDev/Keybased-AC
