@@ -8,7 +8,8 @@ RegisterNetEvent("KeybasedAC:Pressed")
 AddEventHandler("KeybasedAC:Pressed", function(keyMsg, keyMsg2)
     local src = source
     local author = GetPlayerName(src)
-    sendToDisc("Suspicious Activity by: ["..author.."] (ID: "..src..")", "**Notice:** User is pressing keys commonly used by third-party menus.\n **Key Pressed:** ``".. keyMsg.."`` or ``"..keyMsg2.."``")
+    sendToDisc("Suspicious Activity by: ["..author.."] (ID: "..src..")", 
+            "**Notice:** User is pressing keys commonly used by third-party menus.\n**Key Pressed:** ``".. keyMsg.."`` or ``"..keyMsg2.."``\n**Counter:** ``"..Config.DiscordLogs.Counter.."``")
 end)
 
 function sendToDisc(title, msg)
