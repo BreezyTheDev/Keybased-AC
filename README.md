@@ -21,7 +21,7 @@ The following can be found in the ``config.lua`` file.
         -- In order to prevent rate limitation by Discord, I had to implement this counter,
         -- If the set keybinds are pressed for ex. 5x then it will proceed to send a webhook.
         Counter = 5, -- Lowering this value raises your chances of being rate limited. Edit at your own risk.
-        Screenshot = true, -- Requires [screenshot-basic]
+        Screenshot = false, -- Requires [screenshot-basic] -- Defaults to false, set to true if you wish to enable.
         Webhook = '' -- Do not forget to add a webhook.
     },
     Debug = {
