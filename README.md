@@ -45,6 +45,9 @@ https://github.com/BreezyTheDev/Keybased-AC
 ## Reference
 https://docs.fivem.net/docs/game-references/controls/
 
+## screenshot-basic
+https://github.com/citizenfx/screenshot-basic
+
 ## Errors or Suggestions?
 Please message me on discord if you come across any errors when using this resource or if you would like to make a suggestion.
 Discord: `Breezy#0001`
