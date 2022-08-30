@@ -1,7 +1,7 @@
 -- For support join my discord: https://discord.gg/zzUfkfRHzP
 author "Breezy#0001"
 description "Keybased-AC"
-version "1.1"
+version "1.2"
 
 fx_version "cerulean"
 game "gta5"
