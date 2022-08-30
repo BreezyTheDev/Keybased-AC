@@ -5,6 +5,7 @@
 --================================--
 
 -- Threads
+Counter = 0;
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
@@ -15,7 +16,11 @@ Citizen.CreateThread(function()
             local keyMsg2 = suspiciouskeys[i][3];
             local keybind1 = Keybind[1];
             if IsControlJustReleased(0, keybind1) then
-                TriggerServerEvent("KeybasedAC:Pressed", keyMsg, keyMsg2)
+                Counter = Counter + 1;
+                if Counter == Config.DiscordLogs.Counter then
+                    TriggerServerEvent("KeybasedAC:Pressed", keyMsg, keyMsg2)
+                    Counter = 0
+                end
             end
         end
     end
