@@ -14,6 +14,9 @@ Config = {
 
     },
     DiscordLogs = {
+        -- In order to prevent rate limitation by Discord, I had to implement this counter,
+        -- If the set keybinds are pressed for ex. 5x then it will proceed to send a webhook.
+        Counter = 5,
         Webhook = '' -- Do not forget to add a webhook.
     },
     Debug = {
