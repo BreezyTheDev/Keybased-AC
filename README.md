@@ -20,7 +20,7 @@ The following can be found in the ``config.lua`` file.
     DiscordLogs = {
         -- In order to prevent rate limitation by Discord, I had to implement this counter,
         -- If the set keybinds are pressed for ex. 5x then it will proceed to send a webhook.
-        Counter = 5,
+        Counter = 5, -- Lowering this value raises your chances of being rate limited. Edit at your own risk.
         Webhook = '' -- Do not forget to add a webhook.
     },
     Debug = {
@@ -30,12 +30,12 @@ The following can be found in the ``config.lua`` file.
 ```
 In the ``config.lua`` file you can add more keybinds to be logged & add the discord webhook.
 
-## Download
-https://github.com/BreezyTheDev/Keybased-AC
-
 ## :white_check_mark: **Changelog**
 > **v1.1**
 > - Added a counter to help prevent discord rate limitation.
+
+## Download
+https://github.com/BreezyTheDev/Keybased-AC
 
 ## Reference
 https://docs.fivem.net/docs/game-references/controls/
@@ -43,5 +43,6 @@ https://docs.fivem.net/docs/game-references/controls/
 ## Errors or Suggestions?
 Please message me on discord if you come across any errors when using this resource or if you would like to make a suggestion.
 Discord: `Breezy#0001`
+
 
 
