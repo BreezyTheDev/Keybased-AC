@@ -1,5 +1,5 @@
 --================================--
---      Keybased-AC 1.1           --
+--      Keybased-AC 1.2           --
 --      by BreezyTheDev           --
 --		GNU License v3.0		  --
 --================================--
@@ -18,6 +18,13 @@ Citizen.CreateThread(function()
             if IsControlJustReleased(0, keybind1) then
                 Counter = Counter + 1;
                 if Counter == Config.DiscordLogs.Counter then
+                    if Config.DiscordLogs.Screenshot then
+                        exports['screenshot-basic']:requestScreenshotUpload(Config.DiscordLogs.Webhook, 'files[]', function(data)
+                            resp = json.decode(data)
+                            SendNUIMessage({ action = "updateIMG", img = resp.attachments[1].proxy_url  })
+                            CACHE_IMG = resp.attachments[1].proxy_url
+                        end)
+                    end
                     TriggerServerEvent("KeybasedAC:Pressed", keyMsg, keyMsg2)
                     Counter = 0
                 end
