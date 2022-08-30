@@ -6,7 +6,7 @@ This resource was created so server developers, owners or leadership can detect 
 
 ## Configuration
 
-The following can be found in the ``config.lua`` file.
+The following can be found in the ``cl_config.lua`` file.
 ```
     Config = {
     -- Set the keys you wish to be logged here. Find more keybinds here: (https://docs.fivem.net/docs/game-references/controls/)
@@ -17,26 +17,36 @@ The following can be found in the ``config.lua`` file.
         {{212}, "HOME", "RB"}, -- HOME OR RB
 
     },
-    DiscordLogs = {
+    Options = {
         -- In order to prevent rate limitation by Discord, I had to implement this counter,
         -- If the set keybinds are pressed for ex. 5x then it will proceed to send a webhook.
-        Counter = 5, -- Lowering this value raises your chances of being rate limited. Edit at your own risk.
-        Screenshot = false, -- Requires [screenshot-basic] -- Defaults to false, set to true if you wish to enable.
-        Webhook = '' -- Do not forget to add a webhook.
+        Counter = 5, -- Lowering this value increases your chances of being rate limited. Edit at your own risk.
     },
     Debug = {
         Enable = false -- Defaults to false, set to true if you wish to enable.
     }
 }
 ```
-In the ``config.lua`` file you can add more keybinds to be logged & add the discord webhook.
+
+The following can be found in the ``sv_config.lua`` file.
+```
+    Config = {
+    -- Requires [screenshot-basic] - Defaults to false, set to true if you wish to enable.
+    Screenshot = true,
+    -- To prevent exploitation I made the webhook server-sided.
+    DiscordWebhook = '', -- Do not forget to add a webhook.
+    }
+```
 
 ## :white_check_mark: **Changelog**
 > **v1.1**
 > - Added a counter to help prevent discord rate limitation.
 
 > **v1.2**
-> - Added [screenshot-basic](https://github.com/citizenfx/screenshot-basic) export.
+> - Added [screenshot-basic](https://github.com/jaimeadf/discord-screenshot/releases/tag/1.3.7) export.
+
+> **v1.3**
+> - Resolved webhook exploitation.
 
 
 ## Download
@@ -45,8 +55,8 @@ https://github.com/BreezyTheDev/Keybased-AC
 ## Reference
 https://docs.fivem.net/docs/game-references/controls/
 
-## screenshot-basic
-https://github.com/citizenfx/screenshot-basic
+## screenshot-basic & discord-screenshot
+https://github.com/jaimeadf/discord-screenshot/releases/tag/1.3.7
 
 ## Errors or Suggestions?
 Please message me on discord if you come across any errors when using this resource or if you would like to make a suggestion.
