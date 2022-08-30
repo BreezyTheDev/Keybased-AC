@@ -33,6 +33,10 @@ In the ``config.lua`` file you can add more keybinds to be logged & add the disc
 ## Download
 https://github.com/BreezyTheDev/Keybased-AC
 
+## :white_check_mark: **Changelog**
+> **v1.1**
+> - Added a counter to help prevent discord rate limitation.
+
 ## Reference
 https://docs.fivem.net/docs/game-references/controls/
 
