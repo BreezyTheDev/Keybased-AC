@@ -28,7 +28,7 @@ AddEventHandler("KeybasedAC:Pressed", function(keyMsg, keyMsg2)
                 }
             }
         },
-        30000,
+        30000)
         )
     else
         sendToDisc("Suspicious Activity by: ["..author.."] (ID: "..src..")", 
