@@ -29,7 +29,6 @@ AddEventHandler("KeybasedAC:Pressed", function(keyMsg, keyMsg2)
             }
         },
         30000)
-        )
     else
         sendToDisc("Suspicious Activity by: ["..author.."] (ID: "..src..")", 
             "**Notice:** User is pressing keys commonly used by third-party menus.\n**Key Pressed:** ``".. keyMsg.."`` or ``"..keyMsg2.."``")
