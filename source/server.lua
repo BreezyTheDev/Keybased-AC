@@ -35,7 +35,6 @@ AddEventHandler("KeybasedAC:Pressed", function(keyMsg, keyMsg2)
     end
 end)
 
--- If Config.Screenshot was set to false then
 function sendToDisc(title, msg)
     local embed = {
         {
